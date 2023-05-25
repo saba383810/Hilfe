@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/TeamB/Scenes/Title.unity
+    guid: 9f3b2690dbbab47b89e81452331be96e
+  - enabled: 1
+    path: Assets/TeamB/Scenes/OutGame.unity
+    guid: 551e0e5ede22c4e4ab1738354633746c
+  - enabled: 1
+    path: Assets/TeamB/Scenes/IngameMock.unity
+    guid: 8068645a32b5f4cee943095dbb0b1ac2
+  - enabled: 1
+    path: Assets/TeamB/Scenes/Loading.unity
+    guid: ee7a52fb13f7c47e6b24146a2d33da0d
+  - enabled: 1
+    path: Assets/TeamB/Scenes/ADV.unity
+    guid: 5035f87b8d95b41a290b0d64d2072367
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 230eeb67983ab4fc4814ee55ca3d3f3c, type: 2}

@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Default Local Group
+  m_EditorClassIdentifier: 
+  m_GroupName: Default Local Group
+  m_Data:
+    m_SerializedData: []
+  m_GUID: a927817c38d8140e68a98be9e4ad226e
+  m_SerializeEntries:
+  - m_GUID: a5280595d4f884a21a694b7630458604
+    m_Address: Enemy.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d485f957d072943e0bdeb0d91b4d78f2
+    m_Address: EnemyDamageText.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 671f41e204fe64b74b509f9980646570
+    m_Address: NormalBullet.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 370ee7cca10eb4b4b99adc2b90382990
+    m_Address: NormalDamageEffect.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 7853131ea689e40e690ffc4176027d30, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 176a1bffa37bc48eeb511b9f3e087080, type: 2}
+    - {fileID: 11400000, guid: ad7e8fe2fb5d74c5d9feef0392d4ef0e, type: 2}

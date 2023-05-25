@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - NormalAttack
+  - PikuminAttackButton
+  - Enemy
+  - PikminAttack
+  - AimingButton
+  - SpeedItem
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Background
+    uniqueID: 1323851245
+    locked: 0
+  - name: PlayerBack
+    uniqueID: 1615669523
+    locked: 0
+  - name: Enemy
+    uniqueID: 435517421
+    locked: 0
+  - name: Player
+    uniqueID: 1446546231
+    locked: 0
+  - name: PlayerFront
+    uniqueID: 765656283
+    locked: 0
+  - name: TopFront
+    uniqueID: 2681222887
+    locked: 0

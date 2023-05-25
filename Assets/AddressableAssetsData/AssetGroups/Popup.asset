@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Popup
+  m_EditorClassIdentifier: 
+  m_GroupName: Popup
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 7e73d2567a5584d7596a4ddd38c40064
+  m_SerializeEntries:
+  - m_GUID: 34a74ff57471d49779766277540294d8
+    m_Address: ErrorPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+  - m_GUID: b9d6277b8ae7a47b692a7cfdfd3b97c6
+    m_Address: MessagePopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+  - m_GUID: 7a8bfef93bd7e46f980e362afcb2b6b8
+    m_Address: LoadingPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+  - m_GUID: 2b577078a269b4f7fba27a814299d452
+    m_Address: TutorialPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+  - m_GUID: c626e975ca68d4831977371f59d8512e
+    m_Address: RankingPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+  - m_GUID: 57325fc0d20714a65a9476870a3f36e9
+    m_Address: ResultPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+  - m_GUID: 1e1b2c02b53d9489ea5481a1863a6dd3
+    m_Address: ADVPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+  - m_GUID: 9e3b92b0510b74001babbbc48653697d
+    m_Address: UserNameDecisionPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+  - m_GUID: 02047f70953f5ea48aafde8006769741
+    m_Address: PrivateMatchingPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+  - m_GUID: 9086ff8373ade4f9a88d8b0721c2199f
+    m_Address: IngameFooterErrorPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+  - m_GUID: 5c32360582bee4fdaa300fade15be194
+    m_Address: OptionPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+  - m_GUID: e88e77f88b8ce4c94a5f448d20ab5f74
+    m_Address: AfterTutorialPopup
+  - m_GUID: b8d29f5b3ad274758ad0c67bcf82e22e
+    m_Address: CancelPopup
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - Popup
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 7853131ea689e40e690ffc4176027d30, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 89be1a085316d4254a911cb74e3b91a0, type: 2}
+    - {fileID: 11400000, guid: 0f2df721682cd43cd9d4b63db72838bc, type: 2}
