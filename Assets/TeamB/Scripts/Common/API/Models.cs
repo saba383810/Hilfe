@@ -62,6 +62,13 @@ namespace TeamB.Scripts.Common.API
             public string id;
             public uint vote_count;
             public string character_name;
+
+            public VoteRanking(string charaId, uint voteCount, string characterName)
+            {
+                id = charaId;
+                vote_count = voteCount;
+                character_name = characterName;
+            }
         }
 
         [Serializable]

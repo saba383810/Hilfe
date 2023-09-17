@@ -75,8 +75,8 @@ namespace TeamB.Scripts.InGame.Matching
                 Debug.Log($"Grimy: {votePercentData.Grimy} Fang: {votePercentData.Fangqulite} Melo:{votePercentData.Melogardia}");
 
                 if (maxData.vote_count < vote.vote_count) maxData = vote;
-                
             }
+            
             Preferences.SetVotePercentData(votePercentData);
             switch (maxData.id)
             {
