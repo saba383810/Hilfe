@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Runtime.ExceptionServices;
 using Cysharp.Threading.Tasks;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 namespace TeamB.Scripts.Common.API
 {
@@ -242,37 +243,44 @@ namespace TeamB.Scripts.Common.API
             // 人気投票の結果を取得する
             public static async UniTask<Models.VoteRanking[]> GetVoteRankings()
             {
-                if (!IsLoggedIn()) throw new InvalidOperationException("Must be in logged in state");
-
-                var path = "/api/votes";
-                var headers = new Dictionary<string, string>
+                return new[]
                 {
-                    { "User-Agent", GetCustomUserAgent() }
+                    new Models.VoteRanking("grimmy", (uint)Random.Range(10,100),"グリミー"),
+                    new Models.VoteRanking("fangculite", (uint)Random.Range(10,100),"ファングキュライト"),
+                    new Models.VoteRanking("mellogardia", (uint)Random.Range(10,100),"メロガルディア"),
                 };
 
-                string responseJson = null;
-
-                try
-                {
-                    responseJson = await RequestHandler.Get(Config.ServerHost, path, null, headers);
-                }
-                catch (APIErrorException ex)
-                {
-                    if (ex.Type == ErrorType.AuthorizationError)
-                        responseJson = await RequestHandler.Get(Config.ServerHost, path, null, headers);
-                    else
-                        ExceptionDispatchInfo.Capture(ex).Throw();
-                }
-
-                try
-                {
-                    var voteRankings = responseJson.FromJsonArray<Models.VoteRanking>();
-                    return voteRankings;
-                }
-                catch (Exception ex)
-                {
-                    throw new APIErrorException(ErrorType.JsonError, ex.Message, ex);
-                }
+                // if (!IsLoggedIn()) throw new InvalidOperationException("Must be in logged in state");
+                //
+                // var path = "/api/votes";
+                // var headers = new Dictionary<string, string>
+                // {
+                //     { "User-Agent", GetCustomUserAgent() }
+                // };
+                //
+                // string responseJson = null;
+                //
+                // try
+                // {
+                //     responseJson = await RequestHandler.Get(Config.ServerHost, path, null, headers);
+                // }
+                // catch (APIErrorException ex)
+                // {
+                //     if (ex.Type == ErrorType.AuthorizationError)
+                //         responseJson = await RequestHandler.Get(Config.ServerHost, path, null, headers);
+                //     else
+                //         ExceptionDispatchInfo.Capture(ex).Throw();
+                // }
+                //
+                // try
+                // {
+                //     var voteRankings = responseJson.FromJsonArray<Models.VoteRanking>();
+                //     return voteRankings;
+                // }
+                // catch (Exception ex)
+                // {
+                //     throw new APIErrorException(ErrorType.JsonError, ex.Message, ex);
+                // }
             }
         }
 

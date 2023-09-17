@@ -37,7 +37,7 @@ public class HomeMatchingController : MonoBehaviour
     private const int RoomMaxPlayers = 4;
     private const string WebSiteURL = "https://www.mil2023-team-b.com/?utm_source=game_inflow";
 
-    private async void Start()
+    private void Start()
     {
         var mul = safeArea.rect.size.x / 1080f;
         if (mul <= 0.85f)
@@ -53,8 +53,7 @@ public class HomeMatchingController : MonoBehaviour
         
         CheckTrial();
         CheckRanking();
-        
-        
+
         highScoreText.text = Preferences.GetHighScore().ToString();
         
         randomMatchButton.OnClickDefendChattering.TakeUntilDestroy(gameObject).Subscribe(_ => StartRandom());
@@ -129,6 +128,7 @@ public class HomeMatchingController : MonoBehaviour
         {
             Debug.LogError("PlayerNameが登録されていません");
             popup.Hide();
+            
             return;
         }
         

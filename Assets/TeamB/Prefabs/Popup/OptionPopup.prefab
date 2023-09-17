@@ -1185,6 +1185,7 @@ MonoBehaviour:
   window: {fileID: 3785350343517800207}
   closeButtons:
   - {fileID: 461206309714930467}
+  - {fileID: 1184094788179687931}
   prologueButton: {fileID: 2230397432158013021}
   tutorialButton: {fileID: 5854871728979843036}
   bgmSlider: {fileID: 2480331385305031221}
