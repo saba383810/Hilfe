@@ -23,21 +23,8 @@ namespace TeamB.Scripts.Common
                     if (string.IsNullOrEmpty(inputText.text) || inputText.text.Length > 5) return;
                     
                     sendButton.SetInteractable(false);
-                    try
-                    {
-                        var user = await APIClient.Users.SignUp(inputText.text);
-                        Preferences.SetPlayerName(user.user_name);
-                        await APIClient.DoLogin(user.user_id);
-                    }
-                    catch (APIErrorException e)
-                    {
-                        Console.WriteLine(e);
-                        Debug.LogError("APIエラー");
-                    }
-                    finally
-                    {
-                        Hide();
-                    }
+                    Preferences.SetPlayerName(inputText.text);
+                    Hide();
                 });
 
             inputText.onValueChanged.AddListener(val =>
